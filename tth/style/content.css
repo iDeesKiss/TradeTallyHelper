@@ -1,0 +1,11 @@
+.center{
+    background: #283042;
+    display: none;
+    flex-flow: column nowrap;
+    width: 98vw;
+    min-width: calc(1280px - 1vw);
+    max-height: 1280px;
+    height: 100%;
+    margin-left: 1vw;
+    min-height: 672px;
+}

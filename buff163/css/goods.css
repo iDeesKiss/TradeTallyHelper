@@ -1,0 +1,49 @@
+.tth_goods_lot > td {
+    padding: 10px 0 !important;
+}
+
+.tth_rel_goods{
+    height: 32px;
+    padding: 2px 6px 0px 6px;
+    margin-right: 24.2px;
+    border: 1px solid rgba(73, 91, 126, 0);
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #899ab9;
+}
+
+.tth_sale_price{
+    color: #45536C;
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.tth_inv_price{
+    color: #45536C;
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.tth_but_link__img {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/buff163/img/share.svg');
+    width: 14px;
+    height: 14px;
+    background-position: -1px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: invert(60%);
+}
+
+.tth_but_link:hover {
+    border-color: #30323F !important
+}
+
+.tth_but_link:hover > b {
+    background: #30323F !important;
+}
+
+.tth_but_link:hover > b > i {
+    filter: invert(90%);
+}

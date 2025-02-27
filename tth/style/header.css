@@ -1,0 +1,28 @@
+header{
+    height: 64px;
+    width: auto;
+    background: #2E374B;
+    display: flex;
+    align-items: center;
+}
+
+.tth_name{
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    height: auto;
+    margin-left: 24px;
+}
+
+.tth_name_text1{
+    font-size: 40px;
+}
+
+.tth_name_text2{
+    font-size: 16px;
+}
+
+.tth_name_text2:nth-child(2){
+    padding-bottom: 5px;
+    padding-left: 6px;
+}

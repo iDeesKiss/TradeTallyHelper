@@ -1,0 +1,77 @@
+{
+    "manifest_version": 3,
+    "name": "Trade Tally Helper",
+    "version": "0.3",
+    "icons": {
+        "16": "tth_icon.png",
+        "48": "tth_icon.png",
+        "128": "tth_icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://buff.163.com/goods/*"
+            ],
+            "js": [
+                "buff163/js/main.js",
+                "buff163/js/update_goods.js",
+                "buff163/js/update_goods_but.js",
+                "buff163/js/update_relativeGoods.js",
+                "buff163/js/utility.js",
+                "buff163/js/set_color.js"
+            ],
+            "css": [
+                "buff163/css/goods.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://buff.163.com/market/sell_order/*"
+            ],
+            "js": [
+                "buff163/js/main.js",
+                "buff163/js/update_onSale.js",
+                "buff163/js/utility.js",
+                "buff163/js/set_color.js"
+            ],
+            "css": [
+                "buff163/css/goods.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://buff.163.com/market/steam_inventory*"
+            ],
+            "js": [
+                "buff163/js/main.js",
+                "buff163/js/update_Inventory.js",
+                "buff163/js/utility.js",
+                "buff163/js/set_color.js"
+            ],
+            "css": [
+                "buff163/css/goods.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://buff.163.com/*"
+            ],
+            "js": [
+                "config/config.js",
+                "config/text.js"
+            ],
+            "css": []
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "buff163/img/share.svg"
+            ],
+            "matches": [
+                "*://buff.163.com/*"
+            ]
+        }
+    ],
+    "permissions": []
+}
